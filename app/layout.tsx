@@ -10,8 +10,8 @@ export const metadata: Metadata = {
   title: 'AI Tools Hub - Free AI Tools for Creators & Developers',
   description: 'Free AI tools including Sora Prompt Generator, DeepSeek Cost Calculator, and LLMs.txt Generator. Boost your productivity with our AI-powered utilities.',
   keywords: 'AI tools, Sora prompt generator, DeepSeek API calculator, llms.txt generator, AI video prompts, API cost calculator',
-  verification: {
-    google: 'po2OcWbZO9eZCCbxFRRD08l4uOqG_yGh6zBgUXGXhzQ',
+  other: {
+    'google-site-verification': 'po2OcWbZO9eZCCbxFRRD08l4uOqG_yGh6zBgUXGXhzQ',
   },
   openGraph: {
     title: 'AI Tools Hub - Free AI Tools',
