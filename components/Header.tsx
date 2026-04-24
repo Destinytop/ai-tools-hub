@@ -2,9 +2,27 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
-import { Menu, X, Sparkles, Calculator, FileText } from 'lucide-react'
+import { Menu, X, Sparkles, Calculator, FileText, FileCode, Monitor, Gamepad2 } from 'lucide-react'
 
 const tools = [
+  {
+    name: 'Perplexity to Markdown',
+    href: '/perplexity-to-markdown/',
+    icon: FileCode,
+    description: 'Convert Perplexity pages to clean Markdown',
+  },
+  {
+    name: 'Roblox Luau Ghostwriter',
+    href: '/roblox-luau-ghostwriter/',
+    icon: Gamepad2,
+    description: 'AI code generator for Roblox Luau scripting',
+  },
+  {
+    name: 'Vision Pro Upscaler',
+    href: '/vision-pro-video-upscaler/',
+    icon: Monitor,
+    description: 'Video upscaling tools for Apple Vision Pro',
+  },
   {
     name: 'Sora Prompt Generator',
     href: '/sora-prompt-generator/',

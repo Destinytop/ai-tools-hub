@@ -37,3 +37,15 @@ export function copyToClipboard(text: string): Promise<boolean> {
     }
   })
 }
+
+export function downloadTextFile(content: string, filename: string): void {
+  const blob = new Blob([content], { type: 'text/markdown' })
+  const url = URL.createObjectURL(blob)
+  const link = document.createElement('a')
+  link.href = url
+  link.download = filename
+  document.body.appendChild(link)
+  link.click()
+  document.body.removeChild(link)
+  URL.revokeObjectURL(url)
+}

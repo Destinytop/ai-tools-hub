@@ -1,14 +1,38 @@
 import ToolCard from '@/components/ToolCard'
-import { Sparkles, Calculator, FileText, Zap, TrendingUp, Shield } from 'lucide-react'
+import { Sparkles, Calculator, FileText, Zap, TrendingUp, Shield, FileCode, Monitor, Gamepad2 } from 'lucide-react'
 
 const tools = [
+  {
+    title: 'Perplexity to Markdown',
+    description: 'Convert Perplexity AI pages to clean Markdown. Perfect for importing into Notion, Obsidian, or any Markdown editor.',
+    href: '/perplexity-to-markdown/',
+    icon: FileCode,
+    tags: ['Perplexity', 'Markdown', 'Productivity'],
+    trending: true,
+  },
+  {
+    title: 'Roblox Luau Ghostwriter',
+    description: 'AI-powered code generator for Roblox Luau scripting. Perfect for beginners and experienced developers.',
+    href: '/roblox-luau-ghostwriter/',
+    icon: Gamepad2,
+    tags: ['Roblox', 'Luau', 'Game Dev'],
+    trending: true,
+  },
+  {
+    title: 'Vision Pro Video Upscaler',
+    description: 'Transform videos into 4K/8K spatial content optimized for Apple Vision Pro. Find the best AI upscaling tools.',
+    href: '/vision-pro-video-upscaler/',
+    icon: Monitor,
+    tags: ['Vision Pro', 'Video AI', 'Spatial'],
+    trending: true,
+  },
   {
     title: 'Sora Prompt Generator',
     description: 'Generate high-quality, viral-worthy prompts for Sora AI video generation. Optimized for TikTok and social media content.',
     href: '/sora-prompt-generator/',
     icon: Sparkles,
     tags: ['Sora', 'TikTok', 'Video AI'],
-    trending: true,
+    trending: false,
   },
   {
     title: 'DeepSeek Coder API Cost Calculator',
@@ -16,7 +40,7 @@ const tools = [
     href: '/deepseek-cost-calculator/',
     icon: Calculator,
     tags: ['DeepSeek', 'API', 'Pricing'],
-    trending: true,
+    trending: false,
   },
   {
     title: 'LLMs.txt Generator',
@@ -67,9 +91,9 @@ export default function Home() {
               <a href="#tools" className="btn-primary text-lg px-8 py-3">
                 Explore Tools
               </a>
-              <a href="/sora-prompt-generator/" className="btn-secondary text-lg px-8 py-3">
-                Try Sora Generator
-              </a>
+              <a href="/perplexity-to-markdown/" className="btn-secondary text-lg px-8 py-3">
+              Try Perplexity Converter
+            </a>
             </div>
           </div>
         </div>
@@ -128,7 +152,7 @@ export default function Home() {
               Start using our free tools today and see the difference they can make.
             </p>
             <a
-              href="/sora-prompt-generator/"
+              href="/perplexity-to-markdown/"
               className="inline-block bg-white text-primary-600 font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors"
             >
               Get Started Free
