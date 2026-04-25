@@ -318,6 +318,20 @@ export default function RobloxLuauGhostwriter() {
             </a>
           </div>
         </div>
+
+        {/* Ko-fi Section */}
+        <div className="mt-8 text-center">
+          <p className="text-gray-600 mb-4">Found this tool helpful?</p>
+          <a
+            href="https://ko-fi.com/destinytop"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[#FF5E5B] text-white rounded-lg font-semibold hover:bg-[#ff4542] transition-colors"
+          >
+            <span className="text-xl">☕</span>
+            Buy me a coffee
+          </a>
+        </div>
       </div>
     </div>
   )
